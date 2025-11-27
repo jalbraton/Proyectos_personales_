@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Reloj Cuco</string>
+    <string name="add_alarm">Agregar alarma</string>
+    <string name="alarm_ringing">Alarma sonando</string>
+    <string name="stop">Detener</string>
+    <string name="snooze">Posponer</string>
+</resources>

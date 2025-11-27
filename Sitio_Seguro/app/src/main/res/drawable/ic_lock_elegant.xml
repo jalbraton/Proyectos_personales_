@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Lock icon with sophisticated design -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Lock body -->
+    <path
+        android:pathData="M14,20 L34,20 L34,40 Q34,42 32,42 L16,42 Q14,42 14,40 Z"
+        android:fillColor="@color/text_primary"
+        android:strokeWidth="1.5"
+        android:strokeColor="@color/text_secondary"/>
+    
+    <!-- Lock shackle -->
+    <path
+        android:pathData="M18,20 L18,14 A6,6 0 0,1 30,14 L30,20"
+        android:fillColor="@android:color/transparent"
+        android:strokeWidth="2"
+        android:strokeColor="@color/text_primary"
+        android:strokeLineCap="round"/>
+    
+    <!-- Keyhole accent -->
+    <path
+        android:pathData="M24,28 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 M23,30 L23,35"
+        android:strokeWidth="1.5"
+        android:strokeColor="@color/accent_interaction"
+        android:strokeLineCap="round"/>
+    
+</vector>

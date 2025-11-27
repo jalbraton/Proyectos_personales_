@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+  
+  <group 
+      android:scaleX="0.8"
+      android:scaleY="0.8"
+      android:translateX="10.8"
+      android:translateY="10.8">
+    
+    <!-- Elegant abstract security symbol inspired by the provided image -->
+    <!-- Main curved shape - top curve -->
+    <path
+        android:fillColor="#E8E9EA"
+        android:pathData="M35,30 Q25,30 25,40 L25,50 Q25,65 40,68 L60,68 Q75,65 75,50 L75,40 Q75,30 65,30 L55,30 Q50,30 48,35 L48,42 Q48,45 51,45 L57,45 Q60,45 60,42 L60,38 Q60,35 63,35 L67,35 Q70,35 70,38 L70,48 Q70,58 60,60 L40,60 Q30,58 30,48 L30,38 Q30,35 35,35 Z"/>
+    
+    <!-- Bottom connecting curve -->
+    <path
+        android:fillColor="#E8E9EA"
+        android:pathData="M45,68 Q43,70 43,73 L43,80 Q43,85 48,85 L60,85 Q65,85 65,80 L65,73 Q65,70 63,68 Z"/>
+    
+    <!-- Accent circle detail -->
+    <path
+        android:fillColor="#3A5A7A"
+        android:pathData="M54,50 m-6,0 a6,6 0,1 1,12 0 a6,6 0,1 1,-12 0"/>
+    
+    <!-- Inner highlight -->
+    <path
+        android:fillColor="#22252B"
+        android:fillAlpha="0.3"
+        android:pathData="M54,50 m-3,0 a3,3 0,1 1,6 0 a3,3 0,1 1,-6 0"/>
+        
+  </group>
+</vector>

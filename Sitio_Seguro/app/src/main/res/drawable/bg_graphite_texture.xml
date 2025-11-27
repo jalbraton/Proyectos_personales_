@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Premium graphite texture background -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base dark graphite -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/background"/>
+        </shape>
+    </item>
+    
+    <!-- Subtle noise/grain texture -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="45"
+                android:startColor="#02FFFFFF"
+                android:centerColor="#00000000"
+                android:endColor="#01FFFFFF"
+                android:type="linear"/>
+        </shape>
+    </item>
+    
+    <!-- Fine grain pattern -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="135"
+                android:startColor="#01000000"
+                android:centerColor="#02FFFFFF"
+                android:endColor="#01000000"
+                android:type="linear"/>
+        </shape>
+    </item>
+</layer-list>
