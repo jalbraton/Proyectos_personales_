@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/surface">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- Time Picker Section -->
+        <TextView
+            android:id="@+id/labelTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora"
+            android:textSize="11sp"
+            android:textColor="@color/text_hint"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelTime"/>
+
+        <!-- Divider -->
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/timePicker"/>
+
+        <!-- Repeat Days Section -->
+        <TextView
+            android:id="@+id/labelRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repetir"
+            android:textSize="11sp"
+            android:textColor="@color/text_hint"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider1"/>
+
+        <!-- Days Grid -->
+        <LinearLayout
+            android:id="@+id/daysContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/labelRepeat">
+
+            <CheckBox
+                android:id="@+id/checkMon"
+                style="@style/DayCheckBox"
+                android:text="L"/>
+
+            <CheckBox
+                android:id="@+id/checkTue"
+                style="@style/DayCheckBox"
+                android:text="M"/>
+
+            <CheckBox
+                android:id="@+id/checkWed"
+                style="@style/DayCheckBox"
+                android:text="X"/>
+
+            <CheckBox
+                android:id="@+id/checkThu"
+                style="@style/DayCheckBox"
+                android:text="J"/>
+
+            <CheckBox
+                android:id="@+id/checkFri"
+                style="@style/DayCheckBox"
+                android:text="V"/>
+
+            <CheckBox
+                android:id="@+id/checkSat"
+                style="@style/DayCheckBox"
+                android:text="S"/>
+
+            <CheckBox
+                android:id="@+id/checkSun"
+                style="@style/DayCheckBox"
+                android:text="D"/>
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/daysContainer"/>
+
+        <!-- Vibration Section -->
+        <TextView
+            android:id="@+id/labelVibrate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Vibración"
+            android:textSize="15sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/switchVibrate"
+            app:layout_constraintTop_toBottomOf="@id/divider2"/>
+
+        <Switch
+            android:id="@+id/switchVibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:thumbTint="@color/switch_thumb_on"
+            android:trackTint="@color/switch_track_on"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/labelVibrate"
+            app:layout_constraintBottom_toBottomOf="@id/labelVibrate"/>
+
+        <!-- Divider -->
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/labelVibrate"/>
+
+        <!-- Mode Selection -->
+        <TextView
+            android:id="@+id/labelMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modo de reproducción"
+            android:textSize="11sp"
+            android:textColor="@color/text_hint"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider3"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/labelMode">
+
+            <RadioButton
+                android:id="@+id/radioSpecific"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Canción específica"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="sans-serif"
+                android:buttonTint="@color/text_primary"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioRandom"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Aleatorio desde carpeta"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="sans-serif"
+                android:buttonTint="@color/text_primary"/>
+
+        </RadioGroup>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:id="@+id/buttonsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="end"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupMode">
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Cancelar"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="@drawable/button_background"
+                android:text="Guardar"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

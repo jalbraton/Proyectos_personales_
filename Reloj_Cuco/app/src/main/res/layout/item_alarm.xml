@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/card_stroke"
+    app:cardBackgroundColor="@color/card_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- Time Display -->
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:00"
+            android:textSize="40sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="-0.02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- Song Name or RANDOM -->
+        <TextView
+            android:id="@+id/tvMode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="MorningMelodies.mp3"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/switchEnabled"
+            app:layout_constraintTop_toBottomOf="@id/tvTime"/>
+
+        <!-- Repeat Days Display -->
+        <TextView
+            android:id="@+id/tvRepeatDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lun, Mie, Vie"
+            android:textSize="11sp"
+            android:textColor="@color/text_hint"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMode"/>
+
+        <!-- Vibration Indicator -->
+        <TextView
+            android:id="@+id/tvVibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibración"
+            android:textSize="11sp"
+            android:textColor="@color/text_hint"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@id/tvRepeatDays"
+            app:layout_constraintTop_toBottomOf="@id/tvMode"/>
+
+        <!-- Divider Line -->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@color/divider"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@id/switchEnabled"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <!-- Enable/Disable Switch -->
+        <Switch
+            android:id="@+id/switchEnabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:thumbTint="@color/switch_thumb_on"
+            android:trackTint="@color/switch_track_on"
+            app:layout_constraintEnd_toStartOf="@id/btnDelete"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <!-- Delete Button -->
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_delete"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@color/text_secondary"
+            android:contentDescription="Eliminar alarma"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

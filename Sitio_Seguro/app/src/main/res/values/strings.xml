@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name -->
+    <string name="app_name">SitioSeguro</string>
+    
+    <!-- Main Screen -->
+    <string name="main_title">SecureVault</string>
+    <string name="main_subtitle">Encriptación de Nivel Militar</string>
+    <string name="create_volume">Crear Nuevo Volumen</string>
+    <string name="open_volume">Abrir Volumen</string>
+    <string name="settings">Configuración</string>
+    <string name="security_features">• AES-256-XTS\n• PBKDF2 100k iteraciones\n• Limpieza segura de memoria</string>
+    
+    <!-- Create Volume Screen -->
+    <string name="create_volume_title">Crear Volumen</string>
+    <string name="volume_name">Nombre del volumen</string>
+    <string name="volume_name_hint">Mi_Volumen_Seguro</string>
+    <string name="volume_size">Tamaño del volumen</string>
+    <string name="volume_size_hint">100</string>
+    <string name="size_unit">MB</string>
+    <string name="master_password">Contraseña maestra</string>
+    <string name="password_hint">Mínimo 12 caracteres</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="create">Crear</string>
+    <string name="creating_volume">Creando volumen encriptado…</string>
+    <string name="volume_created">Volumen creado exitosamente</string>
+    
+    <!-- Open Volume Screen -->
+    <string name="open_volume_title">Abrir Volumen</string>
+    <string name="open_volume_subtitle">Selecciona un volumen e introduce la contraseña</string>
+    <string name="select_volume">Seleccionar archivo de volumen</string>
+    <string name="volume_path">Ruta del volumen</string>
+    <string name="open">Abrir</string>
+    <string name="opening_volume">Abriendo volumen…</string>
+    <string name="volume_opened">Volumen abierto</string>
+    
+    <!-- Volume Explorer Screen -->
+    <string name="volume_explorer_title">Explorador de Volumen</string>
+    <string name="add_file">Agregar Archivo</string>
+    <string name="extract_file">Extraer</string>
+    <string name="delete_file">Eliminar</string>
+    <string name="close_volume">Cerrar Volumen</string>
+    <string name="no_files">No hay archivos en el volumen</string>
+    <string name="used_space">Usado: %1$s / %2$s</string>
+    <string name="free_space">Libre: %s</string>
+    <string name="file_count">%d archivo(s)</string>
+    
+    <!-- Dialogs -->
+    <string name="confirm">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="success">Éxito</string>
+    <string name="delete_confirmation">¿Eliminar este archivo del volumen?</string>
+    <string name="close_volume_confirmation">¿Cerrar el volumen? Todos los datos están seguros.</string>
+    <string name="ok">OK</string>
+    
+    <!-- Progress -->
+    <string name="please_wait">Por favor espera…</string>
+    <string name="encrypting">Encriptando…</string>
+    <string name="decrypting">Desencriptando…</string>
+    <string name="adding_file">Agregando archivo…</string>
+    <string name="extracting_file">Extrayendo archivo…</string>
+    
+    <!-- Errors -->
+    <string name="error">Error</string>
+    <string name="error_empty_field">Este campo no puede estar vacío</string>
+    <string name="error_password_mismatch">Las contraseñas no coinciden</string>
+    <string name="error_password_weak">La contraseña es muy débil. Usa al menos 12 caracteres con mayúsculas, minúsculas, números y símbolos.</string>
+    <string name="error_invalid_size">Tamaño inválido. Mínimo 1 MB, máximo 10 GB.</string>
+    <string name="error_volume_exists">Ya existe un volumen con ese nombre</string>
+    <string name="error_create_volume">No se pudo crear el volumen</string>
+    <string name="error_open_volume">No se pudo abrir el volumen. Verifica la contraseña.</string>
+    <string name="error_add_file">No se pudo agregar el archivo</string>
+    <string name="error_extract_file">No se pudo extraer el archivo</string>
+    <string name="error_delete_file">No se pudo eliminar el archivo</string>
+    <string name="error_no_space">No hay suficiente espacio en el volumen</string>
+    <string name="error_file_not_found">Archivo no encontrado</string>
+    <string name="error_permission">Permiso denegado. Habilita los permisos de almacenamiento.</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">Configuración</string>
+    <string name="security_settings">Seguridad</string>
+    <string name="screen_protection">Protección de pantalla</string>
+    <string name="screen_protection_desc">Bloquear screenshots y grabación de pantalla</string>
+    <string name="auto_lock">Bloqueo automático</string>
+    <string name="auto_lock_desc">Cerrar volúmenes automáticamente por inactividad</string>
+    <string name="session_timeout">Tiempo de inactividad</string>
+    <string name="session_timeout_desc">Tiempo antes de cerrar sesión (minutos)</string>
+    <string name="about">Acerca de</string>
+    <string name="version">Versión</string>
+    <string name="about_text">SecureVault\nEncriptación de archivos de nivel militar para Android\n\nDesarrollado por José Alberto Pastor Llorente\n\nLicencia: Apache 2.0</string>
+    
+    <!-- Password Strength -->
+    <string name="password_strength">Fortaleza:</string>
+    <string name="strength_weak">Débil</string>
+    <string name="strength_medium">Media</string>
+    <string name="strength_strong">Fuerte</string>
+    <string name="strength_very_strong">Muy fuerte</string>
+    
+    <!-- Permissions -->
+    <string name="permission_required">Permiso requerido</string>
+    <string name="permission_storage">Esta app necesita acceso al almacenamiento para gestionar archivos encriptados.</string>
+    <string name="grant_permission">Conceder permiso</string>
+    
+    <!-- Session -->
+    <string name="session_expired">Sesión expirada</string>
+    <string name="session_expired_message">Tu sesión ha expirado por inactividad. Todos los volúmenes han sido cerrados de forma segura.</string>
+</resources>

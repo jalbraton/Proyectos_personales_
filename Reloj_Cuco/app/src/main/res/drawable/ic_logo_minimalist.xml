@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Minimalist abstract clock logo - No bird or traditional clock -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+    
+    <!-- Outer circle -->
+    <path
+        android:pathData="M16,4 A12,12 0 0,1 16,28 A12,12 0 0,1 16,4"
+        android:strokeWidth="2"
+        android:strokeColor="#2C2C2C"
+        android:fillColor="@android:color/transparent"/>
+    
+    <!-- Abstract time indicator - minimalist line -->
+    <path
+        android:pathData="M16,16 L16,9"
+        android:strokeWidth="2.5"
+        android:strokeColor="#2C2C2C"
+        android:strokeLineCap="round"/>
+    
+    <!-- Second indicator -->
+    <path
+        android:pathData="M16,16 L21,16"
+        android:strokeWidth="2"
+        android:strokeColor="#666666"
+        android:strokeLineCap="round"/>
+    
+    <!-- Center dot -->
+    <path
+        android:pathData="M16,16 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0"
+        android:fillColor="#2C2C2C"/>
+</vector>
