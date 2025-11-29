@@ -1,0 +1,42 @@
+# Network Monitor - Configuration File
+
+# Monitoring settings
+monitoring:
+  interval: 5  # Measurement interval in seconds
+  
+  # Network targets to monitor
+  targets:
+    - host: "8.8.8.8"
+      name: "Google DNS"
+    
+    - host: "1.1.1.1"
+      name: "Cloudflare DNS"
+    
+    - host: "208.67.222.222"
+      name: "OpenDNS"
+
+# Alert thresholds
+thresholds:
+  # Latency thresholds (milliseconds)
+  latency_warning: 100
+  latency_critical: 200
+  
+  # Packet loss thresholds (percentage)
+  packet_loss_warning: 1.0
+  packet_loss_critical: 5.0
+  
+  # Jitter thresholds (milliseconds)
+  jitter_warning: 10.0
+  jitter_critical: 20.0
+
+# Database configuration
+database:
+  path: "data/metrics.db"
+  retention_days: 30  # Days to retain historical data
+
+# Logging configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "logs/network-monitor.log"
+  max_size_mb: 10
+  backup_count: 5
