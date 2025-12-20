@@ -1,85 +1,83 @@
-# 📁 Proyectos Personales
+# Personal Projects Portfolio
 
-Este repositorio contiene una colección de proyectos personales de desarrollo de software.
+This repository contains a collection of personal software development projects, showcasing various technologies and engineering practices.
 
-## 📋 Índice de Proyectos
+## Project Index
 
-### 🌐 Proyectos de Portafolio GitHub
+### Project 2: Network Monitor & Signal Processing
+Branch: `project-2-network-monitor-signal-processing`
 
-#### **Project_2** - Monitoreo de Redes & Procesamiento de Señales
-Dos proyectos profesionales de ingeniería de software:
-- 📁 Carpeta: `/Project_2/`
-- 🔹 **Network Monitor**: Sistema de monitoreo de red en tiempo real (Python)
-- 🔹 **Signal Processing**: Paquete de procesamiento de señales (MATLAB + Python)
-- 🛠️ Tecnologías: Python, MATLAB, SQLite, Asyncio
-- 📊 Características: Análisis de latencia, pérdida de paquetes, filtros digitales, modulación
+Two professional software engineering projects:
+- **Network Monitor**: Real-time network monitoring system (Python)
+- **Signal Processing**: Digital signal processing package (MATLAB + Python)
+- Technologies: Python, MATLAB, SQLite, Asyncio
+- Features: Latency analysis, packet loss detection, digital filters, modulation/demodulation
 
-#### **Project_3** - API Health Monitor
-Sistema de monitoreo de salud de APIs con dashboard en tiempo real.
-- 📁 Carpeta: `/Project_3/`
-- 🛠️ Tecnologías: Python, FastAPI, Streamlit
-- 🔧 Características: Monitoreo HTTP/HTTPS, Dashboard interactivo, Alertas configurables
+### Project 3: API Health Monitor
+Branch: `project-3-api-health-monitor`
 
-#### **Project_4** - Real-Time Analytics Platform
-Plataforma empresarial de análisis en tiempo real con microservicios.
-- 📁 Carpeta: `/Project_4/`
-- 🛠️ Tecnologías: React, TypeScript, Node.js, Python, FastAPI, WebSocket
-- 🏗️ Arquitectura: Microservicios, Docker, Kubernetes, CI/CD
-- ⚡ Características: Colaboración en tiempo real, OAuth2 + JWT + MFA, CRDT, Real-time dashboards
+API health monitoring system with real-time dashboard.
+- Technologies: Python, FastAPI, Streamlit
+- Features: HTTP/HTTPS monitoring, interactive dashboard, configurable alerts
 
-### 🔐 Aplicaciones de Seguridad
+### Project 4: Real-Time Analytics Platform
+Branch: `project-4-real-time-analytics`
 
-#### **Sitio Seguro** - Gestor de Contraseñas Seguro
-Aplicación Android para gestión segura de contraseñas con encriptación AES-256.
-- 📁 Carpeta: `/Sitio_Seguro/`
-- 🛠️ Tecnologías: Kotlin, Android, Jetpack Compose
-- 🔒 Características: Encriptación AES-256, Biometría, Base de datos local
+Enterprise-grade real-time analytics platform with microservices architecture.
+- Technologies: React, TypeScript, Node.js, Python, FastAPI, WebSocket
+- Architecture: Microservices, Docker, Kubernetes, CI/CD
+- Features: Real-time collaboration, OAuth2 + JWT + MFA, CRDT, real-time dashboards
 
-### ⏰ Aplicaciones de Productividad
+### Project 5: Natural Text-to-Speech
+Branch: `project-5-natural-tts`
 
-#### **Reloj Cucú** - Alarma y Recordatorios
-Aplicación Android de alarmas con funcionalidades avanzadas.
-- 📁 Carpeta: `/Reloj_Cuco/`
-- 🛠️ Tecnologías: Kotlin, Android, Jetpack Compose
-- ⏰ Características: Alarmas personalizables, Recordatorios, Interfaz moderna
+Natural text-to-speech generator with web interface.
+- Technologies: Python, Google Cloud TTS
+- Features: Multiple voices, web interface, batch processing
 
-### 🌐 Herramientas de Utilidad
+### Project 6: Malware Analyzer
+Branch: `project-6-malware-analyzer`
 
-#### **Traductor EPUB** - Traductor de Libros Electrónicos
-Herramienta para traducir libros EPUB manteniendo el formato original.
-- 📁 Carpeta: `/Traductor_EPUB/`
-- 🛠️ Tecnologías: Python, Google Translate API
-- 📚 Características: Traducción automática, Preservación de formato, Múltiples idiomas
+File security analysis tool with VirusTotal integration.
+- Technologies: Python, VirusTotal API
+- Features: Hash calculation, threat detection, GUI and CLI interfaces
 
-## 📄 Licencia
+### Project 7: PDF to Text Converter
+Branch: `project-7-pdf-to-txt-converter`
 
-**© 2025 - Todos los derechos reservados**
+PDF to text conversion tool with Streamlit UI.
+- Technologies: Python, Streamlit, PyPDF2
+- Features: Batch conversion, text extraction, user-friendly interface
 
-Todos los proyectos en este repositorio están protegidos bajo una licencia restrictiva:
+## License
 
-- ✅ **Permitido:** Uso personal, estudio del código, reporte de bugs
-- ❌ **Prohibido:** Modificación, redistribución comercial, reclamar autoría
-- ⚠️ **Requerido:** Atribución al autor en cualquier uso o referencia
+Copyright 2025 - All rights reserved
 
-Para más detalles, consulta el archivo [LICENSE](./LICENSE) en cada proyecto.
+All projects in this repository are protected under a restrictive license:
 
-## 🤝 Contribuciones
+- **Permitted:** Personal use, code study, bug reporting
+- **Prohibited:** Modification, commercial redistribution, claiming authorship
+- **Required:** Attribution to the author in any use or reference
 
-Estos son proyectos personales, pero se agradece:
-- 🐛 Reportes de bugs
-- 💡 Sugerencias de mejoras
-- ⭐ Estrellas en GitHub
+For more details, consult the LICENSE file in each project.
 
-## 👤 Autor
+## Contributions
 
-Desarrollador de Software
+These are personal projects, but the following is appreciated:
+- Bug reports
+- Improvement suggestions
+- GitHub stars
+
+## Author
+
+Software Developer
 - GitHub: [@jalbraton](https://github.com/jalbraton)
 
-## 📞 Contacto
+## Contact
 
-Para solicitar permisos especiales, colaboraciones o consultas:
-- 📧 A través de GitHub Issues
+For special permissions, collaborations, or inquiries:
+- Through GitHub Issues
 
 ---
 
-⭐ Si estos proyectos te resultan útiles, considera darles una estrella en GitHub
+If you find these projects useful, please consider giving them a star on GitHub
